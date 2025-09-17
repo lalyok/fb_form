@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Форма обратной связи</title>
 </head>
 <body>
@@ -11,19 +12,19 @@
         <form id="contactForm">
             <label>
                 Имя
+                <br>
                 <input name="name" type="text" required>
             </label>
-            <br>
             <label>
                 Email
+                <br>
                 <input name="email" type="email" required>
             </label>
-            <br>
             <label>
                 Сообщение
+                <br>
                 <textarea name="message" rows="6" required></textarea>
             </label>
-            <br>
             <!-- honeypot, чтобы отсеивать ботов -->
             <input name="hp_field" type="text" style="display:none" aria-hidden="true">
             <button type="submit">Отправить</button>
