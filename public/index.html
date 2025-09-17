@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <main>
+        <h1>Обратная связь</h1>
+        <form id="contactForm">
+            <label>
+                Имя
+                <input name="name" type="text" required>
+            </label>
+            <br>
+            <label>
+                Email
+                <input name="email" type="email" required>
+            </label>
+            <br>
+            <label>
+                Сообщение
+                <textarea name="message" rows="6" required></textarea>
+            </label>
+            <br>
+            <!-- honeypot, чтобы отсеивать ботов -->
+            <input name="hp_field" type="text" style="display:none" aria-hidden="true">
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="notice" role="status" aria-live="polite"></div>
+    </main>
+
+    <script src="/src/form.js" defer></script>
+</body>
+</html>
